@@ -35,7 +35,7 @@ cd ~/isaacsim
 
 The Isaac Sim app can be run directly via command line with 
 ```bash
-./isaac-sim.sh`.
+./isaac-sim.sh
 ```
 Nucleus, Cache and Hub is not needed to run Isaac Sim. Hub Workstation Cache is not fully supported in Isaac Sim 4.5.0 and performance using Hub may vary.
 
