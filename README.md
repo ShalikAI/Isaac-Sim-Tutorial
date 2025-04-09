@@ -1,9 +1,13 @@
 # Isaac-Sim-Tutorial
 This repository is all about Isaac Sim Tutorial for Robot Simulation.
 
+# Requirements
+
+This repository was tested on Ubuntu 22.04, Nvidia Driver 535, Cuda 12.4, Python 3.10 and ROS2 Humble. 
+
 # Installation
 
-The workstation installation of Isaac Sim is recommended for users who wants to run Isaac Sim as a GUI application on a Windows or Linux workstation with a GPU.
+The workstation installation of Isaac Sim is recommended for users who wants to run Isaac Sim as a GUI application on a Linux workstation with a GPU.
 
 ## Workstation Setup
 Ensure your local workstation meets the System Requirements and Driver Requirements for running NVIDIA Isaac Sim.
