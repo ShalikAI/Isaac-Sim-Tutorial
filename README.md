@@ -1,4 +1,4 @@
-# Isaac-Sim-Tutorial
+# Isaac Sim Tutorial
 This repository is all about Isaac Sim Tutorial for Robot Simulation.
 
 # Requirements
