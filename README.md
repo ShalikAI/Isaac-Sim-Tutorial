@@ -56,23 +56,20 @@ Isaac Sim Launch Scripts for additional scripts like the warmup script to pre-wa
 Isaac Sim App Selector
 The Isaac Sim App Selector is a mini-windowed app that helps run Isaac Sim in different modes.
 
-../_images/isim_4.5_base_ref_gui_ui_app_selector.png
 Click START to run the Isaac Sim main app.
 
 Isaac Sim First Run
-Congratulations! You have completed the basic installation of Isaac Sim for a local workstation.
 
 Proceed to Getting Started Tutorials to begin the first Basic Tutorial.
-
-Note
 
 The first run of the Isaac Sim app takes some time to warm up the shader cache.
 
 To run Isaac Sim with a fresh config, use the --reset-user flag. This flag can be entered in the Extra Args section of the Isaac Sim App Selector or when running Isaac Sim in command line.
 
-- Using Isaac Sim with ROS2: A Step-By-Step Guide [[video]](https://www.youtube.com/watch?v=L1rpxRm0Q1w)
+
 
 # Resources
+- Using Isaac Sim with ROS2: A Step-By-Step Guide [[video]](https://www.youtube.com/watch?v=L1rpxRm0Q1w)
 - UR5 Inverse Kinematics + ROS2 Explained (Nvidia Omniverse Isaac Sim) [[video]](https://www.youtube.com/watch?v=DzKHEtwAOLU)
 - Simulation took Control of my Robot Arm (NVIDIA Isaac Sim) [[video]](https://www.youtube.com/watch?v=Eb2zuQxOBlY)
 - How to import my manipulator in Isaac Sim [[video]](https://www.youtube.com/watch?v=kRAZZ5OPZyM)
