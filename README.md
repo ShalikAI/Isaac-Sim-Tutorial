@@ -58,6 +58,28 @@ To run Isaac Sim with a fresh config, use the --reset-user flag. This flag can b
 
 ## Docker setup
 
+# Troubleshooting Installation
+You can see something like this during post-installation process:
+```
+An input-output memory management unit (IOMMU) appears to be enabled on this system.
+On bare-metal Linux systems, CUDA and the display driver do not support IOMMU-enabled PCIe peer to peer memory copy.
+If you are on a bare-metal Linux system, please disable the IOMMU. Otherwise you risk image corruption and program instability.
+This typically can be controlled via BIOS settings (Intel Virtualization Technology for Directed I/O (VT-d) or AMD I/O Virtualization Technology (AMD-Vi)) and kernel parameters (iommu, intel_iommu, amd_iommu).
+Note that in virtual machines with GPU pass-through (vGPU) the IOMMU needs to be enabled.
+Since we can not reliably detect whether this system is bare-metal or a virtual machine, we show this warning in any case when an IOMMU appears to be enabled.
+```
+Disable IOMMU (for bare-metal systems only):
+
+- Disable VT-d or AMD-Vi in BIOS Reboot
+
+- Enter BIOS/UEFI (usually Del, F2, or Esc)
+
+- Find Intel VT-d or AMD-Vi under advanced settings
+
+- Disable it
+
+- Save and reboot
+
 # Resources
 - Using Isaac Sim with ROS2: A Step-By-Step Guide [[video]](https://www.youtube.com/watch?v=L1rpxRm0Q1w)
 - UR5 Inverse Kinematics + ROS2 Explained (Nvidia Omniverse Isaac Sim) [[video]](https://www.youtube.com/watch?v=DzKHEtwAOLU)
