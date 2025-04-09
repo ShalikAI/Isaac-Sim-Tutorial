@@ -12,30 +12,32 @@ The workstation installation of Isaac Sim is recommended for users who wants to 
 ## Workstation Setup
 Ensure your local workstation meets the System Requirements and Driver Requirements for running NVIDIA Isaac Sim.
 
-- Install Visual Studio Code to view and debug source code.
-
-- Download the 4.5 version of Isaac Sim to the default Downloads folder from this [website](https://docs.isaacsim.omniverse.nvidia.com/latest/installation/download.html).
-
-- Unzip the package to the recommended Isaac Sim root folder and Run the Isaac Sim App Selector.
-
-- Run the commands below in Terminal for Linux.
-
+Install Visual Studio Code to view and debug source code.
+```bash
+sudo snap install code
 ```
+Download the 4.5 version of Isaac Sim to the default Downloads folder from this [website](https://docs.isaacsim.omniverse.nvidia.com/latest/installation/download.html).
+
+```bash
 mkdir ~/isaacsim
+```
+Unzip the package to the recommended Isaac Sim root folder:
+```
 cd ~/Downloads
 unzip "isaac-sim-standalone@4.5.0-rc.36+release.19112.f59b3005.gl.linux-x86_64.release.zip" -d ~/isaacsim
+```
+The post_install script is used to create a symlink to the extension_examples folder for the tutorials. Run the Isaac Sim App Selector:
+```bash
 cd ~/isaacsim
 ./post_install.sh
 ./isaac-sim.selector.sh
 ```
 
-- The Isaac Sim app can be run directly via command line with `isaac-sim.bat` or `./isaac-sim.sh`.
-
-- The post_install` script is run to create a symlink to the extension_examples folder for the tutorials.
-
-- Nucleus, Cache and Hub is not needed to run Isaac Sim.
-
-- Hub Workstation Cache is not fully supported in Isaac Sim 4.5.0 and performance using Hub may vary.
+The Isaac Sim app can be run directly via command line with 
+```bash
+./isaac-sim.sh`.
+```
+Nucleus, Cache and Hub is not needed to run Isaac Sim. Hub Workstation Cache is not fully supported in Isaac Sim 4.5.0 and performance using Hub may vary.
 
 Local Assets Packs
 
