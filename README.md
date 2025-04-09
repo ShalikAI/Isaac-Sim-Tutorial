@@ -3,7 +3,7 @@ This repository is all about Isaac Sim Tutorial for Robot Simulation.
 
 # Requirements
 
-This repository was tested on Ubuntu 22.04, Nvidia Driver 535, Cuda 12.4, Python 3.10 and ROS2 Humble. 
+Isaac Sim 4.5 installation was tested on Ubuntu 22.04, Nvidia Driver 535, Cuda 12.4, Python 3.10 and ROS2 Humble. 
 
 # Installation
 
