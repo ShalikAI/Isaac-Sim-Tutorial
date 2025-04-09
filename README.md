@@ -16,7 +16,7 @@ Nucleus Cache is replaced by Hub Workstation Cache.
 
 The Live Sync feature is deprecated in Isaac Sim 4.5.0.
 
-Workstation Setup
+## Workstation Setup
 Ensure your local workstation meets the System Requirements and Driver Requirements for running NVIDIA Isaac Sim.
 
 Install Visual Studio Code to view and debug source code.
@@ -28,18 +28,16 @@ Unzip the package to the recommended Isaac Sim root folder and Run the Isaac Sim
 Run the commands below in Terminal for Linux or Command Prompt in Windows.
 
 
-Linux
+```
 mkdir ~/isaacsim
 cd ~/Downloads
 unzip "isaac-sim-standalone@4.5.0-rc.36+release.19112.f59b3005.gl.linux-x86_64.release.zip" -d ~/isaacsim
 cd ~/isaacsim
 ./post_install.sh
 ./isaac-sim.selector.sh
+```
 
-Windows
-Note
-
-The Isaac Sim app can be run directly via command line with isaac-sim.bat or ./isaac-sim.sh.
+The Isaac Sim app can be run directly via command line with `isaac-sim.bat` or `./isaac-sim.sh`.
 
 The post_install` script is run to create a symlink to the extension_examples folder for the tutorials.
 
