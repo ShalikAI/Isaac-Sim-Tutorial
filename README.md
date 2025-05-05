@@ -11,7 +11,6 @@ This repository is all about Isaac Sim Tutorial for Robot Simulation.
 The workstation installation of Isaac Sim is recommended for users who wants to run Isaac Sim as a GUI application on a Linux workstation with a GPU.
 
 ## Workstation Setup
-Ensure your local workstation meets the System Requirements and Driver Requirements for running NVIDIA Isaac Sim.
 
 Install Visual Studio Code to view and debug source code.
 ```bash
