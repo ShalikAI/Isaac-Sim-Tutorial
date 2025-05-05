@@ -194,6 +194,8 @@ Disable IOMMU (for bare-metal systems only):
 - Isaac Sim 4.5 & Isaac Lab 2.0 | Installation & Overview | NVIDIA Omniverse [[video]](https://www.youtube.com/watch?v=CLFjtuH2NAQ)
 - How to Install NVIDIA Isaac Sim [[video]](https://www.youtube.com/watch?v=SyrsAd8WbCo)
 - Using Isaac Sim with ROS2: A Step-By-Step Guide [[video]](https://www.youtube.com/watch?v=L1rpxRm0Q1w)
+- How I Use IsaacSim with Docker, ROS2, & Octomap for Robotics PhD Research [[video]](https://www.youtube.com/watch?v=9EkkdjW4N54)
+- Isaac Sim in under half an hour [[video]](https://www.youtube.com/watch?v=SjVqOqEXXrY) 
 - UR5 Inverse Kinematics + ROS2 Explained (Nvidia Omniverse Isaac Sim) [[video]](https://www.youtube.com/watch?v=DzKHEtwAOLU)
 - Simulation took Control of my Robot Arm (NVIDIA Isaac Sim) [[video]](https://www.youtube.com/watch?v=Eb2zuQxOBlY)
 - How to import my manipulator in Isaac Sim [[video]](https://www.youtube.com/watch?v=kRAZZ5OPZyM)
