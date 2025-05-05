@@ -57,13 +57,13 @@ The first run of the Isaac Sim app takes some time to warm up the shader cache.
 To run Isaac Sim with a fresh config, use the --reset-user flag. This flag can be entered in the Extra Args section of the Isaac Sim App Selector or when running Isaac Sim in command line.
 
 ## Docker setup
-## Container Installation
+### Container Installation
 The container installation of Isaac Sim is recommended for deployment on remote headless servers or the Cloud using a Docker container running Linux.
 
 ### Container Setup
 Ensure your system meets the System Requirements and Driver Requirements for running NVIDIA Isaac Sim.
 
-### Install NVIDIA Driver:
+#### Install NVIDIA Driver:
 ```
 sudo apt-get update
 sudo apt install build-essential -y
@@ -74,7 +74,7 @@ sudo ./NVIDIA-Linux-x86_64-535.129.03.run
 
 The recommended driver version for Isaac Sim is 535.129.03 for Linux.
 
-### Install Docker:
+#### Install Docker:
 Docker installation using the convenience script:
 ```
 curl -fsSL https://get.docker.com -o get-docker.sh
@@ -91,7 +91,7 @@ Verify Docker:
 docker run hello-world
 ```
 
-### Install the NVIDIA Container Toolkit:
+#### Install the NVIDIA Container Toolkit:
 
 Configure the repository:
 ```
@@ -145,8 +145,6 @@ docker run --name isaac-sim --entrypoint bash -it --runtime=nvidia --gpus all -e
     -v ~/docker/isaac-sim/documents:/root/Documents:rw \
     nvcr.io/nvidia/isaac-sim:4.5.0
 ```
-Note
-
 By using the -e "ACCEPT_EULA=Y" flag, you accept the license agreement of the image found at NVIDIA Omniverse License Agreement.
 
 By using the -e "PRIVACY_CONSENT=Y" flag, you opt-in to the data collection agreement found at Data Collection & Usage. You may opt-out by not setting this flag.
@@ -183,8 +181,6 @@ The first time loading Isaac Sim, it takes a while for the shaders to be cached.
 See Save Isaac Sim Configs on Local Disk to make Isaac Sim configs and cache persistent when using containers.
 
 Download and install the Isaac Sim WebRTC Streaming Client from the Latest Release section.
-
-Note
 
 Isaac Sim WebRTC Streaming Client is recommended to be used within the same network as an Isaac Sim headless instance.
 
