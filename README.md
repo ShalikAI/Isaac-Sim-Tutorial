@@ -11,6 +11,7 @@ This repository is all about Isaac Sim Tutorial for Robot Simulation.
 The workstation installation of Isaac Sim is recommended for users who wants to run Isaac Sim as a GUI application on a Linux workstation with a GPU.
 
 ## Workstation Setup
+Follow this website for more detailed [info](https://docs.isaacsim.omniverse.nvidia.com/latest/installation/install_workstation.html).
 
 Install Visual Studio Code to view and debug source code.
 ```bash
@@ -53,6 +54,7 @@ The Isaac Sim App Selector is a mini-windowed app that helps run Isaac Sim in di
 - To run Isaac Sim with a fresh config, use the `--reset-user` flag. This flag can be entered in the Extra Args section of the Isaac Sim App Selector or when running Isaac Sim in command line.
 
 ## Docker setup
+Follow this website for more detailed [info](https://docs.isaacsim.omniverse.nvidia.com/latest/installation/install_container.html).
 ### Container Installation
 The container installation of Isaac Sim is recommended for deployment on remote headless servers or the Cloud using a Docker container running Linux.
 
