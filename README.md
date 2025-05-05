@@ -37,24 +37,22 @@ The Isaac Sim app can be run directly via command line with
 ```bash
 ./isaac-sim.sh
 ```
-Nucleus, Cache and Hub is not needed to run Isaac Sim. Hub Workstation Cache is not fully supported in Isaac Sim 4.5.0 and performance using Hub may vary.
 
-Local Assets Packs
+### Isaac Sim App Selector
 
-Isaac Sim Launch Scripts for additional scripts like the warmup script to pre-warm the shader cache before runnign Isaac Sim.
+The Isaac Sim App Selector is a mini-windowed app that helps run Isaac Sim in different modes. Click `START` to run the Isaac Sim main app.
 
-Isaac Sim App Selector
-The Isaac Sim App Selector is a mini-windowed app that helps run Isaac Sim in different modes.
+<div align="center">
+  <img src="media/isim_4.5_base_ref_gui_ui_app_selector.png" width="400">
+</div>
 
-Click START to run the Isaac Sim main app.
-
-Isaac Sim First Run
+### Isaac Sim First Run
 
 Proceed to Getting Started Tutorials to begin the first Basic Tutorial.
 
 The first run of the Isaac Sim app takes some time to warm up the shader cache.
 
-To run Isaac Sim with a fresh config, use the --reset-user flag. This flag can be entered in the Extra Args section of the Isaac Sim App Selector or when running Isaac Sim in command line.
+To run Isaac Sim with a fresh config, use the `--reset-user` flag. This flag can be entered in the Extra Args section of the Isaac Sim App Selector or when running Isaac Sim in command line.
 
 ## Docker setup
 ### Container Installation
