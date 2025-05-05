@@ -48,11 +48,9 @@ The Isaac Sim App Selector is a mini-windowed app that helps run Isaac Sim in di
 
 ### Isaac Sim First Run
 
-Proceed to Getting Started Tutorials to begin the first Basic Tutorial.
-
-The first run of the Isaac Sim app takes some time to warm up the shader cache.
-
-To run Isaac Sim with a fresh config, use the `--reset-user` flag. This flag can be entered in the Extra Args section of the Isaac Sim App Selector or when running Isaac Sim in command line.
+- Proceed to Getting Started Tutorials to begin the first Basic Tutorial.
+- The first run of the Isaac Sim app takes some time to warm up the shader cache.
+- To run Isaac Sim with a fresh config, use the `--reset-user` flag. This flag can be entered in the Extra Args section of the Isaac Sim App Selector or when running Isaac Sim in command line.
 
 ## Docker setup
 ### Container Installation
@@ -119,17 +117,17 @@ This section describes how to run the NVIDIA Isaac Sim container.
 
 Steps:
 
-Setup and install the container prerequisites. See Container Setup above.
+1. Setup and install the container prerequisites. See Container Setup above.
 
-Run the following command to confirm your GPU driver version:
+2. Run the following command to confirm your GPU driver version:
 ```
 nvidia-smi
 ```
-Pull the Isaac Sim Container:
+3. Pull the Isaac Sim Container:
 ```
 docker pull nvcr.io/nvidia/isaac-sim:4.5.0
 ```
-Run the Isaac Sim container with an interactive Bash session:
+4. Run the Isaac Sim container with an interactive Bash session:
 ```
 docker run --name isaac-sim --entrypoint bash -it --runtime=nvidia --gpus all -e "ACCEPT_EULA=Y" --rm --network=host \
     -e "PRIVACY_CONSENT=Y" \
@@ -143,52 +141,37 @@ docker run --name isaac-sim --entrypoint bash -it --runtime=nvidia --gpus all -e
     -v ~/docker/isaac-sim/documents:/root/Documents:rw \
     nvcr.io/nvidia/isaac-sim:4.5.0
 ```
-By using the -e "ACCEPT_EULA=Y" flag, you accept the license agreement of the image found at NVIDIA Omniverse License Agreement.
-
-By using the -e "PRIVACY_CONSENT=Y" flag, you opt-in to the data collection agreement found at Data Collection & Usage. You may opt-out by not setting this flag.
-
-The -e "PRIVACY_USERID=<email>" flag can optionally be set for tagging the session logs.
-
-For enterprise users, see Omniverse Nucleus Enterprise.
-
-The Isaac Sim container uses assets in the Cloud if no Nucleus server is available.
+- By using the -e "ACCEPT_EULA=Y" flag, you accept the license agreement of the image found at NVIDIA Omniverse License Agreement.
+- By using the -e "PRIVACY_CONSENT=Y" flag, you opt-in to the data collection agreement found at Data Collection & Usage. You may opt-out by not setting this flag.
+- The -e "PRIVACY_USERID=<email>" flag can optionally be set for tagging the session logs.
+- The Isaac Sim container uses assets in the Cloud if no Nucleus server is available.
 
 When using a separate Nucleus server:
+- See Problem Connecting to Docker Container to expose all ports of the container and connect to an external Nucleus server.
+- See Setting the Default Nucleus Server to set the default Nucleus server
+- See Setting the Default Username and Password for Connecting to the Nucleus Server to set the default credentials for any Nucleus server.
 
-See Problem Connecting to Docker Container to expose all ports of the container and connect to an external Nucleus server.
-
-See Setting the Default Nucleus Server to set the default Nucleus server.
-
-See Setting the Default Username and Password for Connecting to the Nucleus Server to set the default credentials for any Nucleus server.
-
-Start Isaac Sim with native livestream mode:
+5. Start Isaac Sim with native livestream mode:
 ```
 ./runheadless.sh -v
 ```
-
-Before running a livestream client, you must have the Isaac Sim app is loaded and ready.
-It may take a few minutes for Isaac Sim to completely load.
-
-The -v flag is used to show additional logs while the shader cache is being warmed up.
-
-To confirm this, look out for this line in the console or the logs:
-
+- Before running a livestream client, you must have the Isaac Sim app is loaded and ready. It may take a few minutes for Isaac Sim to completely load.
+- The -v flag is used to show additional logs while the shader cache is being warmed up.
+- To confirm this, look out for this line in the console or the logs:
+```
 Isaac Sim Full Streaming App is loaded.
-The first time loading Isaac Sim, it takes a while for the shaders to be cached. Subsequent runs of Isaac Sim are quicker because the shaders are cached and the cache is mounted when the container runs.
+```
+- The first time loading Isaac Sim, it takes a while for the shaders to be cached. Subsequent runs of Isaac Sim are quicker because the shaders are cached and the cache is mounted when the container runs.
+- See Save Isaac Sim Configs on Local Disk to make Isaac Sim configs and cache persistent when using containers.
 
-See Save Isaac Sim Configs on Local Disk to make Isaac Sim configs and cache persistent when using containers.
+6. Download and install the Isaac Sim WebRTC Streaming Client from the Latest Release section.
 
-Download and install the Isaac Sim WebRTC Streaming Client from the Latest Release section.
+- Isaac Sim WebRTC Streaming Client is recommended to be used within the same network as an Isaac Sim headless instance.
+- See Omniverse Streaming Client [DEPRECATED] for an alternative streaming client if you have issue livestreaming remotely in the Cloud.
 
-Isaac Sim WebRTC Streaming Client is recommended to be used within the same network as an Isaac Sim headless instance.
-
-See Omniverse Streaming Client [DEPRECATED] for an alternative streaming client if you have issue livestreaming remotely in the Cloud.
-
-Run the the Isaac Sim WebRTC Streaming Client.
-
-Enter the IP address of the machine or instance running the Isaac Sim container and click on the Connect button to begin live streaming.
-
-Proceed to Getting Started Tutorials to begin your first tutorial.
+7. Run the the Isaac Sim WebRTC Streaming Client.
+8. Enter the IP address of the machine or instance running the Isaac Sim container and click on the Connect button to begin live streaming.
+9. Proceed to Getting Started Tutorials to begin your first tutorial.
 
 # Troubleshooting Installation
 You can see something like this during post-installation process:
