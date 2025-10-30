@@ -202,4 +202,6 @@ Disable IOMMU (for bare-metal systems only):
 - How to Use MoveIt with Isaac Sim: A Step-by-Step Guide [[video]](https://www.youtube.com/watch?v=pGje2slp6-s)
 - How to Utilize LeRobot, Isaac Sim and ROS2 [[video]](https://www.youtube.com/watch?v=eO5wMzw9LeQ)
 - How We Build Digital Twins [[video]](https://www.youtube.com/watch?v=NGiNydrE8xU)
-- How To Build Digital Twins In Omniverse Tutorial [[video]](https://www.youtube.com/watch?v=-Va2sXIHtaQ) 
+- How To Build Digital Twins In Omniverse Tutorial [[video]](https://www.youtube.com/watch?v=-Va2sXIHtaQ)
+- 2025
+  - Building the Isaac Sim Graph and Connecting Everything [[video]](https://www.youtube.com/watch?v=7-h08kKI5UE) 
